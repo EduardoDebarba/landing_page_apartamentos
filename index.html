@@ -11,30 +11,55 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
       rel="stylesheet"
-    />
+      />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Studios Heaven</title>
   </head>
   <body>
     <header>
-      <img
-        class="image-header"
-        src="./images/ei_1677284378542-removebg-preview.png"
-        alt=""
-      />
-      <nav>
-        <a class="header-item" href="#inicio">Ínicio</a>
-        <a class="header-item" href="#acomodacoes">Acomodações</a>
-        <a class="header-item" href="#espacogourmet">Espaço Gourmet</a>
-        <a class="header-item" href="#espacolazer">Espaço de Lazer</a>
-        <a class="header-item" href="#localizacao">Localização</a>
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./images/ei_1677284378542-removebg-preview.png" alt="">
+        </div>
+        <div class="nav-list">
+          <ul>
+            <a class="header-item" href="#inicio">Ínicio</a>
+            <a class="header-item" href="#acomodacoes">Acomodações</a>
+            <a class="header-item" href="#espacogourmet">Espaço Gourmet</a>
+            <a class="header-item" href="#espacolazer">Espaço de Lazer</a>
+            <a class="header-item" href="#localizacao">Localização</a>
+          </ul>
+        </div>
+        <div class="reserve-botton">
+          <button>
+            <span class="transition"></span>
+            <span class="gradient"></span>
+            <span class="label">Reserve Agora</span>
+          </button>
+        </div>
+
+        <div class="mobile-menu-icon">
+          <button onclick="showMenu()"><img class="icon" src="./images/white-menu-icon-png-18.jpg" alt=""></button>
+        </div>
       </nav>
-      <a href="#reserva">
-        <button>
-          <span class="transition"></span>
-          <span class="gradient"></span>
-          <span class="label">Reserve Agora</span>
-        </button>
-      </a>
+
+      <div class="mobile-menu">
+        <ul>
+          <a class="header-item" href="#inicio">Ínicio</a>
+          <a class="header-item" href="#acomodacoes">Acomodações</a>
+          <a class="header-item" href="#espacogourmet">Espaço Gourmet</a>
+          <a class="header-item" href="#espacolazer">Espaço de Lazer</a>
+          <a class="header-item" href="#localizacao">Localização</a>
+        </ul>
+
+        <div class="reserve-botton">
+          <button>
+            <span class="transition"></span>
+            <span class="gradient"></span>
+            <span class="label">Reserve Agora</span>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
       <section id="inicio" class="image-section-first"></section>
@@ -202,5 +227,15 @@
         />
       </a>
     </footer>
+    <script>
+      function clickMenu(){
+        if(start.style.display === 'block'){
+          start.style.display = 'none'
+        } else {
+          start.style.display = 'block'
+        }
+      }
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>
